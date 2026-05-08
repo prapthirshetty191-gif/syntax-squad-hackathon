@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SafeNest</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar">
+<div class="logo">
+<div class="logo-circle"></div>
+<div>
+<h2>SafeNest</h2>
+<p>AI SAFETY</p>
+</div>
+</div>
+
+<div class="nav-links">
+<a href="#">Home</a>
+<a href="#">Dashboard</a>
+<a href="#">SOS</a>
+<a href="#">Contacts</a>
+<a href="#">Community</a>
+</div>
+</nav>
+
+<section class="hero">
+<div class="hero-left">
+<h1>Your <span>safety companion</span>, always one tap away.</h1>
+
+<p>
+SafeNest AI keeps you, your loved ones,
+and your community connected during emergencies.
+</p>
+
+<div class="hero-buttons">
+<button class="primary-btn">Open Safety Dashboard</button>
+<button class="secondary-btn">Add Emergency Contacts</button>
+</div>
+</div>
+
+<div class="hero-right">
+<button class="sos-circle" onclick="activateSOS()">
+🚨
+<span>SOS</span>
+<p>TAP FOR HELP</p>
+</button>
+</div>
+</section>
+
+<section class="features">
+
+<div class="feature-card">
+<h2>📍 Live Location</h2>
+<p id="location">Waiting for location...</p>
+</div>
+
+<div class="feature-card">
+<h2>🎤 Voice Emergency Detection</h2>
+
+<p>
+SafeNest can detect distress sounds
+or panic situations and automatically
+activate emergency assistance.
+</p>
+
+<label class="switch">
+<input type="checkbox" id="voiceToggle">
+<span class="slider"></span>
+</label>
+
+<p id="micStatus">🎙️ Microphone inactive</p>
+</div>
+
+<div class="feature-card">
+<h2>🚓 Nearby Emergency Services</h2>
+<p>🏥 City Hospital - 1.2km</p>
+<p>👮 Police Station - 0.8km</p>
+</div>
+
+<div class="feature-card">
+<h2>👨‍👩‍👧 Emergency Contacts</h2>
+
+<button class="contact-btn">
+📞 Call Emergency Contact
+</button>
+
+<button class="share-btn" onclick="shareAlert()">
+📤 Share Emergency Alert
+</button>
+
+</div>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
